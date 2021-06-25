@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="forecastModel">
+  <name>forecastModel</name>
+  <uuid>86050710-5b27-4e49-8464-2103d12ad27c</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#205dd91c-71ab-4cd7-8da7-e63535d218f0"/>
+  <targetRuleProject href="../../forecastModel#5b787f16-9a7d-4ccb-afc2-6572ddb231b2"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

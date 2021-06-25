@@ -1,0 +1,8 @@
+{
+  "name": "Stuart",
+  "weather": {
+    "rain forecast": 56,
+    "temperature": "cold",
+    "storm alert": false
+  }
+}
