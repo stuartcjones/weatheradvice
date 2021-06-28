@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="Simple Weather Advisor">
+  <name>simpleWeatherAdvisor</name>
+  <uuid>68761ffb-2e4b-4985-8215-99e20e15170b</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#8a435317-ad04-41b5-a932-be1ea705f69f"/>
+  <targetRuleProject href="../../Simple%20Weather%20Advisor#ea7b1988-366e-4c9b-aeaf-99a5fa88cef8"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Rain1</name>
+  <uuid>4da3ea6d-a462-460c-bea3-7bbbae03f329</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+	RainForecast is at least 50 and less than 100
+then
+	set decision to "Rain is very likely today, take an umbrella if you go out" ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

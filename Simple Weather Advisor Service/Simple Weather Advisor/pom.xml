@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>decisions.weather_advisor.simple_weather_advisor_service</groupId>
+        <artifactId>simpleWeatherAdvisorService</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>decisions.weather_advisor.simple_weather_advisor_service</groupId>
+    <artifactId>simpleWeatherAdvisor</artifactId>
+    <version>LATEST-SNAPSHOT</version>
+    <packaging>decision-library</packaging>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.ibm.decision</groupId>
+                <artifactId>build-maven-plugin</artifactId>
+                <configuration>
+                    <deployments>
+                        <deployment>
+                            <name>simpleWeatherAdvisor</name>
+                        </deployment>
+                    </deployments>
+                <packageName>decisions.weather_advisor.simple_weather_advisor_service.simpleweatheradvisor</packageName>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

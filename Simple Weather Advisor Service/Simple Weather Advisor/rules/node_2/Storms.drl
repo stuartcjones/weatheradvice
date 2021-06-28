@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Storms</name>
+  <uuid>3ff5d616-08bb-4940-948e-379d448b91ef</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+	'Storm Warning' is true 
+then
+	set decision to "there is a storm coming, don't go out today" ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>decisionModel</name>
+  <uuid>8a435317-ad04-41b5-a932-be1ea705f69f</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="node_0" name="Name">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.String" collection="false" name="Name"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_0_ii" name="Name" typeRef="java.lang.String"/>
+    </inputData>
+    <decision id="node_1" name="Decision">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="java.lang.String" collection="false" name="Name"/>
+                <input bomType="java.lang.String" collection="false" name="Decision 2"/>
+                <output bomType="java.lang.String" collection="false" name="Decision"/>
+                <rule defaultRule="false" href="node_1/Join.drl" kind="BusinessRule" name="Join"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_1_ii" name="Decision" typeRef="java.lang.String"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_2" name="Decision 2">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="first">
+                <input bomType="java.lang.String" collection="false" name="Temperature"/>
+                <input bomType="java.lang.Boolean" collection="false" name="Storm Warning"/>
+                <input bomType="java.lang.Long" collection="false" name="RainForecast"/>
+                <output bomType="java.lang.String" collection="false" name="Decision 2"/>
+                <rule defaultRule="false" href="node_2/Storms.drl" kind="BusinessRule" name="Storms"/>
+                <rule defaultRule="false" href="node_2/Rain1.drl" kind="BusinessRule" name="Rain1"/>
+                <rule defaultRule="false" href="node_2/Rain2.drl" kind="BusinessRule" name="Rain2"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_2_ii" name="Decision 2" typeRef="java.lang.String"/>
+        <informationRequirement>
+            <requiredInput href="#node_3"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_4"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_5"/>
+        </informationRequirement>
+    </decision>
+    <inputData id="node_3" name="Temperature">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.String" collection="false" name="Temperature"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_3_ii" name="Temperature" typeRef="java.lang.String"/>
+    </inputData>
+    <inputData id="node_4" name="Storm Warning">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.Boolean" collection="false" name="Storm Warning"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_4_ii" name="Storm Warning" typeRef="java.lang.Boolean"/>
+    </inputData>
+    <inputData id="node_5" name="RainForecast">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.Long" collection="false" name="RainForecast"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_5_ii" name="RainForecast" typeRef="java.lang.Long"/>
+    </inputData>
+</definitions></definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>

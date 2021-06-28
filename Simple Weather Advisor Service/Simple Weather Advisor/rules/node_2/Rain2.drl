@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Rain2</name>
+  <uuid>a0fa8ca3-2c7f-4684-8307-48a9016df565</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+	RainForecast is less than 50
+then
+	set decision to "It is probably dry today, enjoy the fressh air" ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>
